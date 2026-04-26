@@ -1,0 +1,38 @@
+---
+---
+<div class="row">
+  <div id="{{ entry.key }}" class="col-sm-12">
+    <!-- BibTeX block shown directly -->
+    <div class="bibtex" style="position: relative; margin-bottom: 0.5em;">
+      <button class="copy-bibtex-btn" onclick="copyBibtex(this)" title="Copy BibTeX"
+              style="position:absolute; top:4px; right:4px; padding:2px 8px; font-size:0.7rem;
+                     border:1px solid var(--global-theme-color,#2698BA); border-radius:4px;
+                     background:transparent; color:var(--global-theme-color,#2698BA); cursor:pointer; z-index:1;">
+        Copy
+      </button>
+      {% highlight bibtex %}
+      {{- entry.bibtex | hideCustomBibtex -}}
+      {% endhighlight %}
+    </div>
+    <!-- Links -->
+    <div class="links">
+      {% if entry.html %}
+        {% if entry.html contains '://' %}
+          <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+        {% else %}
+          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+        {% endif %}
+      {% endif %}
+      {% if entry.doi %}
+        <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
+      {% endif %}
+      {% if entry.pdf %}
+        {% if entry.pdf contains '://' %}
+          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+        {% else %}
+          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+        {% endif %}
+      {% endif %}
+    </div>
+  </div>
+</div>
