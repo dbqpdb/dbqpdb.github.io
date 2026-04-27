@@ -2,6 +2,8 @@
 
 A simple, clean, and responsive Jekyll theme for academics.
 
+> **About this repo:** this is Daniel Brenner's personal academic site (live at <https://dbqpdb.github.io>) built on al-folio. The guidance below is upstream theme guidance; for personalization details, deployment notes, and the local Sass workaround specific to this site, read [CLAUDE.md](CLAUDE.md) first.
+
 ## Quick Links by Role
 
 - **Are you a coding agent?** → Read [`.github/copilot-instructions.md`](.github/copilot-instructions.md) first (tech stack, build, CI/CD, common pitfalls & solutions)
