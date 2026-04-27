@@ -31,6 +31,7 @@ al-folio's SCSS uses Dart Sass `@use` syntax, but the local Ruby 3.0 + sassc gem
 ## Key Customizations Made
 
 ### Files modified from al-folio defaults:
+
 - `_config.yml` — personalized for Daniel Brenner, URL set to dbqpdb.github.io, scholar config for Brenner
 - `_pages/about.md` — bio, subtitle, profile info
 - `_pages/publications.md` — description updated
@@ -48,12 +49,14 @@ al-folio's SCSS uses Dart Sass `@use` syntax, but the local Ruby 3.0 + sassc gem
 - `_sass/_navbar.scss` — opacity set to 1
 
 ### Files removed (demo content):
+
 - `_pages/about_einstein.md`, `profiles.md`, `dropdown.md`, `repositories.md`, `books.md`, `news.md`
 - `_teachings/data-science-fundamentals.md`, `introduction-to-machine-learning.md`
 - `_news/announcement_1.md`, `announcement_2.md`, `announcement_3.md`
 - `books` collection removed from `_config.yml` and `jekyll-archives` config
 
 ### Files added:
+
 - `_teachings/ling-538-computational-linguistics.md`
 - `_teachings/ling-539-statistical-nlp.md`
 - `_teachings/ling-581-advanced-computational-linguistics.md`
@@ -67,7 +70,7 @@ al-folio's SCSS uses Dart Sass `@use` syntax, but the local Ruby 3.0 + sassc gem
 - [ ] Copy CV PDF to `assets/pdf/DanBrenner_CV.pdf`
 - [ ] Set up GitHub Actions for deployment (needs Dart Sass for full SCSS compilation)
 - [ ] Decide whether to keep or remove: blog page, projects page
-- [ ] ImageMagick disabled locally (`imagemagick.enabled: false` in _config.yml) — re-enable for production
+- [ ] ImageMagick disabled locally (`imagemagick.enabled: false` in \_config.yml) — re-enable for production
 - [ ] Consider Docker-based local dev for full Sass compilation
 - [ ] Initial git commit and push
 
