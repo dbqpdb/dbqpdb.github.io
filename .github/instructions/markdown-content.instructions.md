@@ -1,5 +1,5 @@
 ---
-applyTo: "_books/**/*.md,_news/**/*.md,_pages/**/*.md,_posts/**/*.md,_projects/**/*.md,_teachings/**/*.md"
+applyTo: "_books/**/*.md,_news/**/*.md,_pages/**/*.md,_posts/**/*.md,_projects/**/*.md,_teaching/**/*.md"
 ---
 
 # Content Files (Markdown) Instructions
@@ -13,7 +13,7 @@ Content in al-folio is organized by type:
 - **\_pages/** – Static pages (about, CV, publications, projects, etc.)
 - **\_posts/** – Blog posts (format: `YYYY-MM-DD-title.md`)
 - **\_projects/** – Project showcase entries
-- **\_teachings/** – Course and teaching information
+- **\_teaching/** – Course and teaching information
 
 ## Frontmatter Structure
 
@@ -80,7 +80,7 @@ importance: 1
 ---
 ```
 
-### Teaching/Course Frontmatter (\_teachings/)
+### Teaching/Course Frontmatter (\_teaching/)
 
 ```yaml
 ---

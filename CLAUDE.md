@@ -61,18 +61,18 @@ al-folio's SCSS uses Dart Sass `@use` syntax, but the local Ruby 3.0 + sassc gem
 ### Files removed (demo content):
 
 - `_pages/about_einstein.md`, `profiles.md`, `dropdown.md`, `repositories.md`, `books.md`, `news.md`
-- `_teachings/data-science-fundamentals.md`, `introduction-to-machine-learning.md`
+- `_teaching/data-science-fundamentals.md`, `introduction-to-machine-learning.md`
 - `_news/announcement_1.md`, `announcement_2.md`, `announcement_3.md`
 - `books` collection removed from `_config.yml` and `jekyll-archives` config
 - `_data/cv.yml` (Einstein RenderCV demo), `assets/rendercv/` (config dir), `.github/workflows/render-cv.yml` — the parallel RenderCV pipeline conflicted with the JSONResume-based CV page (`cv_format: jsonresume` in `_pages/cv.md`) and the workflow was failing on the demo content. The CV PDF is now sourced live from [`dbqpdb/db_cv`](https://github.com/dbqpdb/db_cv) (`cv_pdf:` in `_pages/cv.md` points at the raw GitHub URL).
 
 ### Files added:
 
-- `_teachings/ling-538-computational-linguistics.md`
-- `_teachings/ling-539-statistical-nlp.md`
-- `_teachings/ling-581-advanced-computational-linguistics.md`
-- `_teachings/ling-696g-advanced-speech-technology.md`
-- `_teachings/ling-101-language.md`
+- `_teaching/ling-538-computational-linguistics.md`
+- `_teaching/ling-539-statistical-nlp.md`
+- `_teaching/ling-581-advanced-computational-linguistics.md`
+- `_teaching/ling-696g-advanced-speech-technology.md`
+- `_teaching/ling-101-language.md`
 - `_news/2026-spring-teaching.md`
 
 ## Still TODO

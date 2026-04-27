@@ -101,7 +101,7 @@ bundle exec jekyll serve --port 4000   # Run at http://localhost:4000
 - `_projects/` – Project showcase entries
 - `_sass/` – SCSS stylesheets
 - `_scripts/` – JavaScript files for functionality
-- `_teachings/` – Course and teaching entries
+- `_teaching/` – Course and teaching entries
 - `assets/img/` – Images, profile pictures
 - `docker-compose.yml` – Docker compose configuration
 - `Dockerfile` – Docker image definition

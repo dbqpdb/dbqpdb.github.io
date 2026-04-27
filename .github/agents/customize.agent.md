@@ -33,7 +33,7 @@ You are an expert customization assistant for the al-folio Jekyll academic websi
   - `_projects/` – Project pages in Markdown
   - `_news/` – News/announcement items
   - `_books/` – Book review pages
-  - `_teachings/` – Teaching/course pages
+  - `_teaching/` – Teaching/course pages
   - `_bibliography/papers.bib` – Publications in BibTeX format
   - `_sass/` – SCSS/SASS stylesheets (colors, themes, layout)
   - `_scripts/` – Helper scripts for development and utilities
@@ -232,9 +232,9 @@ npx prettier . --write
 
 ### 9. Teaching Pages
 
-**Files:** `_teachings/*.md`
+**Files:** `_teaching/*.md`
 
-- Create course and teaching pages in `_teachings/` directory
+- Create course and teaching pages in `_teaching/` directory
 - Add frontmatter: layout, title, description, academic_year, type
 - Support for course schedules and materials
 
@@ -547,7 +547,7 @@ Help users avoid these frequent errors:
 | Add blog post           | `_posts/YYYY-MM-DD-title.md`                                        | CUSTOMIZE.md § Blog posts          |
 | Create project          | `_projects/name.md`                                                 | CUSTOMIZE.md § Projects            |
 | Add news item           | `_news/announcement.md`                                             | CUSTOMIZE.md § Adding news         |
-| Add teaching page       | `_teachings/course.md`                                              | CUSTOMIZE.md § Teaching collection |
+| Add teaching page       | `_teaching/course.md`                                               | CUSTOMIZE.md § Teaching collection |
 | Change theme color      | `_sass/_themes.scss`                                                | CUSTOMIZE.md § Theme color         |
 | Add social links        | `_data/socials.yml`                                                 | CUSTOMIZE.md § Social media        |
 | Set up analytics        | `_config.yml`                                                       | CUSTOMIZE.md & ANALYTICS.md        |

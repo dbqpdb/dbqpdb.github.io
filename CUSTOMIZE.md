@@ -35,7 +35,7 @@ Here we will give you some tips on how to customize the website. One important t
   - [Adding Collections](#adding-collections)
     - [Creating a new collection](#creating-a-new-collection)
     - [Using frontmatter fields in your collection](#using-frontmatter-fields-in-your-collection)
-    - [Creating a teachings collection](#creating-a-teachings-collection)
+    - [Creating a teaching collection](#creating-a-teaching-collection)
       - [Course file format](#course-file-format)
       - [Important course collection notes](#important-course-collection-notes)
       - [Required fields](#required-fields)
@@ -132,7 +132,7 @@ The project is structured as follows, focusing on the main components that you w
     ├── 📄 _navbar.scss: navigation bar and dropdown menu styles
     ├── 📄 _publications.scss: publication list and bibliography styles
     ├── 📄 _tabs.scss: tabbed content styles
-    ├── 📄 _teachings.scss: course and teaching styles
+    ├── 📄 _teaching.scss: course and teaching styles
     ├── 📄 _themes.scss: theme colors and icons
     ├── 📄 _typograms.scss: typogram diagram styles
     ├── 📄 _typography.scss: text, headings, links, tables, and blockquote styles
@@ -525,13 +525,13 @@ Then in your landing page template:
 {% endif %}
 ```
 
-### Creating a teachings collection
+### Creating a teaching collection
 
-The al-folio theme includes a pre-configured `_teachings/` collection for course pages. Each course is represented by a markdown file with frontmatter metadata. Here's how to add or modify courses:
+The al-folio theme includes a pre-configured `_teaching/` collection for course pages. Each course is represented by a markdown file with frontmatter metadata. Here's how to add or modify courses:
 
 #### Course file format
 
-Create markdown files in `_teachings/` with the following structure:
+Create markdown files in `_teaching/` with the following structure:
 
 ```yaml
 ---

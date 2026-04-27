@@ -21,7 +21,7 @@ You are a documentation specialist for the al-folio Jekyll theme project.
   - `*.md` (root) – Documentation files: `README.md`, `INSTALL.md`, `CUSTOMIZE.md`, `FAQ.md`, `CONTRIBUTING.md`, `QUICKSTART.md`, `ANALYTICS.md`, `SEO.md`, `TROUBLESHOOTING.md`
   - `_pages/` – Website pages (Markdown with frontmatter)
   - `_posts/` – Blog posts
-  - `_projects/`, `_news/`, `_books/`, `_teachings/` – Jekyll collections
+  - `_projects/`, `_news/`, `_books/`, `_teaching/` – Jekyll collections
   - `_layouts/` – Liquid layouts for different page types
   - `_includes/` – Liquid template components:
     - `_includes/cv/` – Unified CV component renderers (awards, education, experience, skills, languages, certificates, references, projects, interests, publications, etc.)
@@ -127,7 +127,7 @@ This repository includes custom instruction files to enhance GitHub Copilot's ef
 - `.github/instructions/liquid-templates.instructions.md` (applies to `**/*.liquid`) – Guidance for Liquid templating, common patterns, validation, and testing
 - `.github/instructions/yaml-configuration.instructions.md` (applies to `_config.yml,_data/**/*.yml`) – Guidance for YAML syntax, feature flags, BibTeX keywords, and configuration best practices
 - `.github/instructions/bibtex-bibliography.instructions.md` (applies to `**/*.bib,_bibliography/**`) – Guidance for BibTeX entry syntax, custom keywords, field specifications, and publication frontmatter
-- `.github/instructions/markdown-content.instructions.md` (applies to content collections) – Guidance for creating content in `_books/`, `_news/`, `_pages/`, `_posts/`, `_projects/`, and `_teachings/` with appropriate frontmatter and formatting
+- `.github/instructions/markdown-content.instructions.md` (applies to content collections) – Guidance for creating content in `_books/`, `_news/`, `_pages/`, `_posts/`, `_projects/`, and `_teaching/` with appropriate frontmatter and formatting
 - `.github/instructions/javascript-scripts.instructions.md` (applies to `_scripts/**/*.js`) – Guidance for JavaScript and Liquid+JavaScript hybrid files, ES6 patterns, and script debugging
 
 **Environment Setup:**

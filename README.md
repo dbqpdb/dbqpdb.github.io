@@ -32,7 +32,7 @@ Native Ruby works too, but local Sass compilation is incomplete on Ruby 3.0 beca
 - [`_pages/about.md`](_pages/about.md) — landing page bio
 - [`_pages/cv.md`](_pages/cv.md) + [`assets/json/resume.json`](assets/json/resume.json) — CV page; the downloadable PDF lives in [`dbqpdb/db_cv`](https://github.com/dbqpdb/db_cv)
 - [`_bibliography/papers.bib`](_bibliography/papers.bib) — publications
-- [`_teachings/`](_teachings/) — course pages
+- [`_teaching/`](_teaching/) — course pages
 - [`_data/socials.yml`](_data/socials.yml) — email, GitHub, LinkedIn
 
 A more complete inventory of customizations and known local-dev gotchas lives in [CLAUDE.md](CLAUDE.md).
