@@ -94,6 +94,13 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/daniel-brenner-046597140", "_blank");
         },
       },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=K0IKTgcAAAAJ", "_blank");
+        },
+      },{
         id: 'social-rss',
         title: 'RSS Feed',
         section: 'Socials',
