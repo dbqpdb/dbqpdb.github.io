@@ -138,8 +138,6 @@ When making changes:
 - **broken-links.yml, broken-links-site.yml** – Link validation
 - **axe.yml** – Accessibility testing
 - **codeql.yml** – Security scanning
-- **update-citations.yml** – Automatic citation updates
-- **render-cv.yml** – CV rendering from RenderCV format
 
 ### Pre-commit Requirements
 
