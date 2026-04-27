@@ -11,7 +11,7 @@ course_id: ling-581
 
 ## Course Overview
 
-This is the continuation of *LING/CSC/PSYC 538: Computational Linguistics*. Students gain deeper understanding and practical experience with symbolic and analytic concepts, tools, and methods for working with natural language in computational systems. This course sequence (538, 581) complements the statistical NLP course sequence (539, 582).
+This is the continuation of _LING/CSC/PSYC 538: Computational Linguistics_. Students gain deeper understanding and practical experience with symbolic and analytic concepts, tools, and methods for working with natural language in computational systems. This course sequence (538, 581) complements the statistical NLP course sequence (539, 582).
 
 ## Topics
 
@@ -26,4 +26,4 @@ LING/CSC/PSYC 538. Proficiency with Python, Prolog, and Perl.
 
 ## Textbook
 
-*Speech and Language Processing*, Jurafsky & Martin ([draft available online](https://web.stanford.edu/~jurafsky/slp3/)).
+_Speech and Language Processing_, Jurafsky & Martin ([draft available online](https://web.stanford.edu/~jurafsky/slp3/)).

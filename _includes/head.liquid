@@ -75,24 +75,26 @@
   <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}">
 {% endif %}
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
-<!-- Inline overrides: al-folio's @use-based Sass requires Dart Sass, which isn't
-     available in the local sassc build. These styles patch the gap until production
-     (Docker / GitHub Actions) compiles the full SCSS. -->
+<!--
+  Inline overrides: al-folio's @use-based Sass requires Dart Sass, which isn't
+  available in the local sassc build. These styles patch the gap until production
+  (Docker / GitHub Actions) compiles the full SCSS.
+-->
 <style>
   .btn-sm.z-depth-0 {
     display: inline-block;
     padding: 2px 8px;
     margin: 2px 4px 2px 0;
     font-size: 0.75rem;
-    border: 1px solid var(--global-theme-color, #2698BA);
+    border: 1px solid var(--global-theme-color, #2698ba);
     border-radius: 4px;
-    color: var(--global-theme-color, #2698BA);
+    color: var(--global-theme-color, #2698ba);
     background: transparent;
     text-decoration: none;
     cursor: pointer;
   }
   .btn-sm.z-depth-0:hover {
-    background: var(--global-theme-color, #2698BA);
+    background: var(--global-theme-color, #2698ba);
     color: #fff;
   }
   .bibtex.hidden {
@@ -129,24 +131,36 @@
     background: transparent !important;
     color: #d4d4d4;
   }
-  .bibtex .highlight .nc { color: #569cd6; }
-  .bibtex .highlight .nl { color: #9cdcfe; }
-  .bibtex .highlight .na { color: #ce9178; }
-  .bibtex .highlight .s  { color: #b5cea8; }
-  .bibtex .highlight .p  { color: #d4d4d4; }
+  .bibtex .highlight .nc {
+    color: #569cd6;
+  }
+  .bibtex .highlight .nl {
+    color: #9cdcfe;
+  }
+  .bibtex .highlight .na {
+    color: #ce9178;
+  }
+  .bibtex .highlight .s {
+    color: #b5cea8;
+  }
+  .bibtex .highlight .p {
+    color: #d4d4d4;
+  }
   .copy-bibtex-btn:hover {
-    background: var(--global-theme-color, #2698BA) !important;
+    background: var(--global-theme-color, #2698ba) !important;
     color: #fff !important;
   }
 </style>
 <script>
-function copyBibtex(btn) {
-  var code = btn.parentElement.querySelector('pre').textContent;
-  navigator.clipboard.writeText(code).then(function() {
-    btn.textContent = 'Copied!';
-    setTimeout(function() { btn.textContent = 'Copy'; }, 1500);
-  });
-}
+  function copyBibtex(btn) {
+    var code = btn.parentElement.querySelector('pre').textContent;
+    navigator.clipboard.writeText(code).then(function () {
+      btn.textContent = 'Copied!';
+      setTimeout(function () {
+        btn.textContent = 'Copy';
+      }, 1500);
+    });
+  }
 </script>
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 

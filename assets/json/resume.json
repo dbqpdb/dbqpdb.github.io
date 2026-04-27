@@ -155,46 +155,25 @@
       "name": "Speech Technology",
       "level": "",
       "icon": "fa-solid fa-microphone",
-      "keywords": [
-        "ASR",
-        "TTS",
-        "Speech Scoring",
-        "Forced Alignment",
-        "Acoustic Analysis"
-      ]
+      "keywords": ["ASR", "TTS", "Speech Scoring", "Forced Alignment", "Acoustic Analysis"]
     },
     {
       "name": "Programming",
       "level": "",
       "icon": "fa-solid fa-code",
-      "keywords": [
-        "Python",
-        "Flask",
-        "Praat",
-        "R",
-        "MATLAB"
-      ]
+      "keywords": ["Python", "Flask", "Praat", "R", "MATLAB"]
     },
     {
       "name": "NLP/ML",
       "level": "",
       "icon": "fa-solid fa-brain",
-      "keywords": [
-        "Statistical NLP",
-        "Deep Learning",
-        "Language Models"
-      ]
+      "keywords": ["Statistical NLP", "Deep Learning", "Language Models"]
     },
     {
       "name": "Phonetics",
       "level": "",
       "icon": "fa-solid fa-comment",
-      "keywords": [
-        "Acoustic Phonetics",
-        "Articulatory Phonetics",
-        "Aerodynamics",
-        "Perception"
-      ]
+      "keywords": ["Acoustic Phonetics", "Articulatory Phonetics", "Aerodynamics", "Perception"]
     }
   ],
   "languages": [

@@ -4,10 +4,16 @@
   <div id="{{ entry.key }}" class="col-sm-12">
     <!-- BibTeX block shown directly -->
     <div class="bibtex" style="position: relative; margin-bottom: 0.5em;">
-      <button class="copy-bibtex-btn" onclick="copyBibtex(this)" title="Copy BibTeX"
-              style="position:absolute; top:4px; right:4px; padding:2px 8px; font-size:0.7rem;
-                     border:1px solid var(--global-theme-color,#2698BA); border-radius:4px;
-                     background:transparent; color:var(--global-theme-color,#2698BA); cursor:pointer; z-index:1;">
+      <button
+        class="copy-bibtex-btn"
+        onclick="copyBibtex(this)"
+        title="Copy BibTeX"
+        style="
+          position:absolute; top:4px; right:4px; padding:2px 8px; font-size:0.7rem;
+          border:1px solid var(--global-theme-color,#2698BA); border-radius:4px;
+          background:transparent; color:var(--global-theme-color,#2698BA); cursor:pointer; z-index:1;
+        "
+      >
         Copy
       </button>
       {% highlight bibtex %}

@@ -22,8 +22,8 @@ Using the Chomsky Hierarchy as a framework:
 - **Programming** — Perl, Python, and Prolog for computational linguistics
 - **Parsing** — applying these tools to realistic language data
 
-This course prepares students for *LING 581: Advanced Computational Linguistics*.
+This course prepares students for _LING 581: Advanced Computational Linguistics_.
 
 ## Textbook
 
-*Speech and Language Processing*, Jurafsky & Martin ([draft available online](https://web.stanford.edu/~jurafsky/slp3/)).
+_Speech and Language Processing_, Jurafsky & Martin ([draft available online](https://web.stanford.edu/~jurafsky/slp3/)).

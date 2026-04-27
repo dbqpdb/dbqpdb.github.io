@@ -30,4 +30,4 @@ Familiarity with content of LING 578 recommended. Python programming required.
 
 ## Textbook
 
-Hammond, Michael (2025) *Speech Technology* (draft textbook, available on D2L).
+Hammond, Michael (2025) _Speech Technology_ (draft textbook, available on D2L).
