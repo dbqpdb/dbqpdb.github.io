@@ -4,6 +4,14 @@
 
 Academic website for Daniel Brenner (phonetician / speech technology engineer), built with al-folio (Jekyll).
 
+🌐 **Live site:** <https://dbqpdb.github.io>
+
+## Deployment
+
+Pushes to `main` trigger `.github/workflows/deploy.yml`, which builds the site on a GitHub-hosted runner (Ruby 3.3.5 + Dart Sass + ImageMagick), runs PurgeCSS, drops a `.nojekyll` marker into `_site/`, and publishes the result to the `gh-pages` branch via `JamesIves/github-pages-deploy-action@v4`. GitHub Pages serves `gh-pages` as static HTML — the `.nojekyll` marker is required so the legacy Pages builder doesn't try to re-Jekyll-render the already-built output (which fails on al-folio plugins like `jekyll-toc` that aren't in the github-pages gem allowlist).
+
+Pages source: `gh-pages` branch, root path. Configured via `gh api -X PUT /repos/dbqpdb/dbqpdb.github.io/pages` with `{"source": {"branch": "gh-pages", "path": "/"}}`.
+
 ## Local Development
 
 ```bash
@@ -47,6 +55,8 @@ al-folio's SCSS uses Dart Sass `@use` syntax, but the local Ruby 3.0 + sassc gem
 - `_plugins/google-scholar-citations.rb` — removed activesupport dependency (incompatible with Ruby 3.0)
 - `_plugins/inspirehep-citations.rb` — same fix
 - `_sass/_navbar.scss` — opacity set to 1
+- `.github/workflows/deploy.yml` — added a `touch _site/.nojekyll` step before the Pages deploy
+- `_config.yml` — `imagemagick.enabled: true` (the deploy runner installs imagemagick)
 
 ### Files removed (demo content):
 
@@ -54,6 +64,7 @@ al-folio's SCSS uses Dart Sass `@use` syntax, but the local Ruby 3.0 + sassc gem
 - `_teachings/data-science-fundamentals.md`, `introduction-to-machine-learning.md`
 - `_news/announcement_1.md`, `announcement_2.md`, `announcement_3.md`
 - `books` collection removed from `_config.yml` and `jekyll-archives` config
+- `_data/cv.yml` (Einstein RenderCV demo), `assets/rendercv/` (config dir), `.github/workflows/render-cv.yml` — the parallel RenderCV pipeline conflicted with the JSONResume-based CV page (`cv_format: jsonresume` in `_pages/cv.md`) and the workflow was failing on the demo content. The CV PDF is now sourced live from [`dbqpdb/db_cv`](https://github.com/dbqpdb/db_cv) (`cv_pdf:` in `_pages/cv.md` points at the raw GitHub URL).
 
 ### Files added:
 
@@ -66,13 +77,9 @@ al-folio's SCSS uses Dart Sass `@use` syntax, but the local Ruby 3.0 + sassc gem
 
 ## Still TODO
 
-- [ ] Add profile photo (`assets/img/prof_pic.jpg`)
-- [ ] Copy CV PDF to `assets/pdf/DanBrenner_CV.pdf`
-- [ ] Set up GitHub Actions for deployment (needs Dart Sass for full SCSS compilation)
-- [ ] Decide whether to keep or remove: blog page, projects page
-- [ ] ImageMagick disabled locally (`imagemagick.enabled: false` in \_config.yml) — re-enable for production
-- [ ] Consider Docker-based local dev for full Sass compilation
-- [ ] Initial git commit and push
+- [ ] Decide whether to keep or remove: blog page, projects page (currently using al-folio defaults; demo posts/projects still ship at `/blog/` and `/projects/`)
+- [ ] Consider Docker-based local dev for full Sass compilation (would also remove the inline-CSS workaround in `_includes/head.liquid`)
+- [ ] Triage the remaining non-blocking workflows that failed on the initial push but aren't on the deploy critical path (e.g. lighthouse-badger, broken-links-site)
 
 ## Related Projects
 
