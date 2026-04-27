@@ -47,31 +47,31 @@ ninja.data = [{
         },{id: "news-teaching-ling-538-computational-linguistics-ling-581-advanced-computational-linguistics-and-ling-696g-advanced-speech-technology-at-the-university-of-arizona-this-spring",
           title: 'Teaching LING 538: Computational Linguistics, LING 581: Advanced Computational Linguistics, and LING 696G:...',
           description: "",
-          section: "News",},{id: "teachings-ling-101-language",
+          section: "News",},{id: "teaching-ling-101-language",
           title: 'LING 101: Language',
           description: "Introduction to the scientific study of language, covering phonetics, phonology, morphology, syntax, semantics, and language in society.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/ling-101-language/";
-            },},{id: "teachings-ling-538-computational-linguistics",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/ling-101-language/";
+            },},{id: "teaching-ling-538-computational-linguistics",
           title: 'LING 538: Computational Linguistics',
           description: "Introduction to symbolic and analytic methods for computational linguistics: regular expressions, finite state automata, and context-free grammars. Programming in Perl, Python, and Prolog.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/ling-538-computational-linguistics/";
-            },},{id: "teachings-ling-539-statistical-natural-language-processing",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/ling-538-computational-linguistics/";
+            },},{id: "teaching-ling-539-statistical-natural-language-processing",
           title: 'LING 539: Statistical Natural Language Processing',
           description: "Statistical and machine learning methods for natural language processing, including classification, sequence modeling, and neural approaches.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/ling-539-statistical-nlp/";
-            },},{id: "teachings-ling-581-advanced-computational-linguistics",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/ling-539-statistical-nlp/";
+            },},{id: "teaching-ling-581-advanced-computational-linguistics",
           title: 'LING 581: Advanced Computational Linguistics',
           description: "Continuation of LING 538, covering formal grammars, syntactic parsing, treebanks, and lexical networks (WordNet). Symbolic and analytic methods for natural language.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/ling-581-advanced-computational-linguistics/";
-            },},{id: "teachings-ling-696g-advanced-speech-technology",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/ling-581-advanced-computational-linguistics/";
+            },},{id: "teaching-ling-696g-advanced-speech-technology",
           title: 'LING 696G: Advanced Speech Technology',
           description: "Neural techniques for speech synthesis (TTS) and automatic speech recognition (ASR/STT). Hands-on implementation of neural speech systems on HPC.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/ling-696g-advanced-speech-technology/";
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/ling-696g-advanced-speech-technology/";
             },},{
         id: 'social-email',
         title: 'email',
