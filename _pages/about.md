@@ -29,4 +29,4 @@ I'm a phonetician and speech technology engineer working at the intersection of 
 
 I currently teach in the [Human Language Technology](https://hlt.arizona.edu/) program at the University of Arizona, where I offer courses in computational linguistics, statistical NLP, and advanced speech technology. Previously, I was an Associate AI Engineer at [ETS](https://www.ets.org/), where I built speech scoring systems for language learning applications including TOEFL and TOEIC products.
 
-I hold a PhD in Linguistics from the University of Arizona, with specializations in phonetics and cognitive science. My [dissertation](http://arizona.openrepository.com/arizona/handle/10150/578721) investigated the phonetics of Mandarin tones in conversation. I speak English, Japanese, and Mandarin.
+I hold a PhD in Linguistics from the University of Arizona, with specializations in phonetics and cognitive science. My [dissertation](http://arizona.openrepository.com/arizona/handle/10150/578721) investigated the phonetics of Mandarin tones in conversation.
