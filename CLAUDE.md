@@ -44,7 +44,7 @@ al-folio's SCSS uses Dart Sass `@use` syntax, but the local Ruby 3.0 + sassc gem
 - `_pages/about.md` — bio, subtitle, profile info
 - `_pages/publications.md` — description updated
 - `_pages/teaching.md` — simplified, nav_order 3
-- `_pages/cv.md` — jsonresume format, links to DanBrenner_CV.pdf
+- `_pages/cv.md` — stub navbar entry; `permalink` points directly at the live PDF on `dbqpdb/db_cv` so the CV nav button is an external link and no HTML CV page is generated
 - `_data/socials.yml` — email, GitHub, LinkedIn
 - `assets/json/resume.json` — full CV data (education, work history, skills, languages)
 - `_bibliography/papers.bib` — 14 publications from ~/references/lit.bib (abbr fields removed)
@@ -64,7 +64,7 @@ al-folio's SCSS uses Dart Sass `@use` syntax, but the local Ruby 3.0 + sassc gem
 - `_teaching/data-science-fundamentals.md`, `introduction-to-machine-learning.md`
 - `_news/announcement_1.md`, `announcement_2.md`, `announcement_3.md`
 - `books` collection removed from `_config.yml` and `jekyll-archives` config
-- `_data/cv.yml` (Einstein RenderCV demo), `assets/rendercv/` (config dir), `.github/workflows/render-cv.yml` — the parallel RenderCV pipeline conflicted with the JSONResume-based CV page (`cv_format: jsonresume` in `_pages/cv.md`) and the workflow was failing on the demo content. The CV PDF is now sourced live from [`dbqpdb/db_cv`](https://github.com/dbqpdb/db_cv) (`cv_pdf:` in `_pages/cv.md` points at the raw GitHub URL).
+- `_data/cv.yml` (Einstein RenderCV demo), `assets/rendercv/` (config dir), `.github/workflows/render-cv.yml` — the parallel RenderCV pipeline conflicted with the JSONResume-based CV page and the workflow was failing on the demo content. The HTML CV page was later removed entirely; the CV nav button now links directly to the live PDF at [`dbqpdb/db_cv`](https://github.com/dbqpdb/db_cv) via the external `permalink` in `_pages/cv.md`.
 
 ### Files added:
 

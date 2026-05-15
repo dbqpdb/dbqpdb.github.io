@@ -39,10 +39,10 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Academic CV for Daniel Brenner.",
+          description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/https:/github.com/dbqpdb/db_cv/raw/master/DanBrenner_CV.pdf";
           },
         },{id: "news-teaching-ling-538-computational-linguistics-ling-581-advanced-computational-linguistics-and-ling-696g-advanced-speech-technology-at-the-university-of-arizona-this-spring",
           title: 'Teaching LING 538: Computational Linguistics, LING 581: Advanced Computational Linguistics, and LING 696G:...',
